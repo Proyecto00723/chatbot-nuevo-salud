@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import fetch from "node-fetch";
- 
+
 // 🟢 Cargar variables desde el archivo .env
 dotenv.config();
 
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // 🟢 Obtener la clave desde variables de entorno
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 
 app.post("/analizar", async (req, res) => {
   const { mensaje } = req.body;
