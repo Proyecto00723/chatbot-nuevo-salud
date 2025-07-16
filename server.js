@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // 🟢 Obtener la clave desde variables de entorno
-const OPENAI_API_KEY "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";
+const OPENAI_API_KEY = "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";
 
 app.post("/analizar", async (req, res) => {
   const { mensaje } = req.body;
